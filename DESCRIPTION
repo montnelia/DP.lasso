@@ -1,0 +1,32 @@
+Package: DP.lasso
+Type: Package
+Title: Discriminative power lasso (DP-lasso)
+Version: 0.1.0
+Author: 
+    c(person(given = "Cornelia",
+           family = "Fuetterer",
+           role = c("aut", "cre"),
+           email = "corneliafuetterer@gmail.com",
+           comment = c(ORCID = "0000-0002-8354-6660")), 
+	person(given = "Ruth", family = "Pfeiffer", role = c("aut"), email = "pfeiffer@mail.nih.gov",
+                    comment = c(ORCID = "0000-0001-7791-2698")))
+Maintainer: Cornelia Fuetterer <corneliafuetterer@gmail.com>
+Description: DP-lasso is a regularized regression approach for multinomial logistic models for categorical outcomes with a novel adaptive L1-type  penalty term,that incorporates ANOVA based weights (DPan). We also provide clustering based DP-lasso approaches using the Daavies-Bouldin (DB) index, and the Silhouette index (Si), resulting in DPdb and DPsi.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Depends:
+    R (>= 3.5.0)
+Imports:
+    dplyr (>= 1.0.0),
+    tidyr (>= 1.1.0), 
+    MASS,
+    glmnet,
+    clusterSim,
+    ncvreg,
+    mvtnorm, 
+    caret, 
+    nnet, 
+    knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
